@@ -29,12 +29,14 @@
   
   @media (min-width: 400px) {
     .container {
-      width: 85%;
+      width: 100%;
       padding: 0; }
+    .columns {
+      margin-left: 4%; }
   }
     @media (min-width: 650px) {
     .container {
-      width: 80%; }
+      width: 100%; }
     .column,
     .columns {
       margin-left: 4%; }
@@ -56,8 +58,8 @@
     .eleven.columns                 { width: 91.3333333333%; }
     .twelve.columns                 { width: 100%; margin-left: 0; }
   
-    .one-third.column               { width: 30.6666666667%; margin-left: 2%;}
-    .two-thirds.column              { width: 60.3333333333%; margin-left: 2%;}
+    .one-third.column               { width: 30.6666666667%;}
+    .two-thirds.column              { width: 60.3333333333%;}
 
   
     .one-half.column                { width: 48%; }
@@ -268,11 +270,49 @@ nav ul li a:hover {
         top: 55px;
         left: 0;
         width: 100%;
-        height: 300px;
+        height: 240px;
         background-color: #FEF9D9;
     }
 
     nav ul.open li {
         text-align: center; /* Align text for vertical list */
     }
+}
+
+
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make the content area take up the remaining space */
+.content {
+  flex: 1; /* This pushes the footer to the bottom */
+}
+
+
+/* FOOTER */
+footer {
+  color: #8EACCD;
+  text-align: right;
+  padding: 20px 0;
+  font-size: 1rem; /* Adjusted for readability */
+  line-height: 1.6;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+/* Ensure footer is properly aligned on larger screens */
+@media (min-width: 650px) {
+  footer p {
+      font-size: 1.2rem; /* Slightly larger for larger screens */
+  }
 }

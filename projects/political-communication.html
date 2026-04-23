@@ -1,129 +1,176 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <script src="https://kit.fontawesome.com/b1f6c37ee8.js" crossorigin="anonymous"></script>
-        
-        <!-- Website Metadata-->
-        <meta charset="UTF-8">
-        <title>Giovanni Maggi</title>
-        <meta name="description" content="Personal web page of Giovanni Maggi">
-        <meta name="author" content="Giovanni Maggi">
-        
-        <!-- visualization on mobile and desktop -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
-        <!-- Remember to add the CSS specifications for the Layout of the website -->
-        <link rel="stylesheet" href="style.css"> 
-    
-        <!-- favicons 
-        <link rel="icon" href="images/favicon.ico">
-        <link rel="shortcut icon" href="images/favicon.ico">
-        
-        -->
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giovanni Maggi - PhD Candidate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
 <body>
-    <div class="container">
-    
-        <nav>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <circle cx="10" cy="10" r="4" fill="currentColor" />
+            <path
+                d="M10 0v3M10 17v3M20 10h-3M3 10H0M16.07 3.93l-2.12 2.12M6.05 14.05l-2.12 2.12M16.07 16.07l-2.12-2.12M6.05 5.95L3.93 3.93"
+                stroke="currentColor" stroke-width="2" />
+        </svg>
+        <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+        </svg>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-brand">Giovanni Maggi</a>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../research.html" class="nav-link active">Research</a>
+                <a href="../publications.html" class="nav-link">Publications</a>
+                <a href="../cv.html" class="nav-link">CV</a>
             </div>
-            <div class="site-name"><h5>&nbsp;&nbsp;&nbsp;Giovanni Maggi</h5></div>
-                <ul id="nav_links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/research.html">Research</a></li>
-                <li><a href="/publications.html">Publications</a></li>
-                <!--<li><a href="/portfolio.html">Portfolio</a></li>-->
-                <li><a href="/cv.html">CV</a></li>
-            </ul>
-            <script src="menu.js"></script>
-        </nav>  
-    
-        <div class="ten columns">
-
-            <h3>Public Sphere Projects</h3>
-            
-            <h5>
-                <br/><b>Structuring the Public Debate. 
-                <br/>Party-Press Alignment and Discursive Polarization in the French Immigration and Climate Change Debate</b>
-            </h5>
-            <p style="text-align: justify;">
-                Master Thesis - 2024<br/>
-                <a href="/pdf/masterthesis.pdf"><i class="fa fa-arrow-right"></i> Full Manuscript</a><br/>
-                <br/>In my thesis I explore whether the arguments developed by Benkler, Farris, and Roberts in their 2018 book "Network Propaganda" apply in contexts outside of the US – i.e., in countries with different media and political systems. In dialogue with the literature in comparative media studies, political communication, and political science, I leverage computational techniques to estimate the discursive polarization levels in France between 2017 and 2019 and its relation to party-press alignment on issue salience. My analysis finds little evidence of polarization in the French media system and scarce proof of a correlation between the two variables. 
-                <br/><br/>
-                Supervisors: Prof. Caterina Froio (Sciences Po, CEE); Prof. Pedro Ramaciotti Morales (CNRS, Institute for Complex Systems)
-                <br/><br/>
-            </p>
-            <p style="text-align: center">
-                <img src="/images/NetworkLeaningImmigration.png" width="300" height="300">
-                <img src="/images/NetworkLeaningClimate.png" width="300" height="300">
-                <img src="/images/barchart-polarization.png" width="600" height="220">
-            </p>
-  
-            <h5>
-            <br/><b>Exploring the #NordStream Discourse on Twitter</b>
-            </h5>
-            <p style="text-align: justify;">
-                Master Paper - 2023<br/>
-                <a href="https://github.com/giomagg/Exploring-the-NordStream-Discourse-on-Twitter"><i class="fa fa-arrow-right"></i> Full Paper</a>
-                <br/>
-                In this work, together with Luis Denart, we explored the Twitter discussion around the explosion of the Nord Stream 2 pipeline in 2022 in the context of the Russian invasion of Ukraine. Using social network analysis and large language models we find clearly identifiable communities showing different discourses and narratives concerning the event. The project was produced for a CSS class taught by Prof. Jean-Philippe Cointet, Prof. Marton Karsai, and Armin Pournaki. 
-            </p>
-            <p style="text-align: center">
-                <img src="/images/nordstream.jpeg" width="500" height="500">
-            </p>
-
-            <h5>
-                <br/><b>Humans, Threat, or Management?
-                <br/>Framing Immigration in the Media during the 2022 Italian Election</b>
-            </h5>
-            <p style="text-align: justify;">
-                Master Paper - 2023<br/>
-                <a href="/pdf/immigrationframing.pdf"><i class="fa fa-arrow-right"></i> Full paper</a>
-                <br/>This was a research paper produced for the class "From the Margins to the Mainstream – Far-Right Politics in Europe and Beyond" by prof. Caterina Froio. In it, I mapped the media discussion on immigration in Italy during the 2022 election using web crawling methods and social network analysis, and qualitatively analyse the frames used by different communities to talk about immigration. 
-            </p>
-            <p style="text-align: center">
-                <img src="/images/immigrationitaly.png" width="500" height="400">
-            </p>
-
-
-            <h5>
-                <br/><b>Evaluating Fox News' impact on US senators' political communication</b>
-            </h5>
-            <p style="text-align: justify;">
-                Master Paper - 2022<br/>
-                <a href="https://github.com/giomagg/Fox-News-and-US-senators"><i class="fa fa-arrow-right"></i> Project Summary</a>
-                <br/>
-                In this project, together with Christoph Mautner Markhof, we investigated the influence of Fox News on the Twitter communication of US senators using sentiment analysis. 
-            </p>
-            <p style="text-align: center">
-                <img src="/images/foxnews-senators.png" width="300" height="220">
-            </p>
-
-            <h5>
-                <br/><b>Mapping the Connection between Celebrities and Politicians on Twitter</b>
-            </h5>
-            <p style="text-align: justify;">
-                Bachelor's Paper - 2019<br/>
-                This is my first ever computational social science project, conducted under the supervision of prof. Chris Bail during a course at the Venice International Universtity. Together with the class we mapped the connections between US celebrities and politicians from the US house of representatives on Twitter using social network analysis. The results show little connection – in terms of retweets, citations, and likes – between the two classes (in the vizualization below, politicians are on the left and celebrities on the right). 
-            </p>
-            <p style="text-align: center">
-                <img src="/images/celebrities-politicians.png" width="600" height="300">
-            </p>
-    
         </div>
+    </nav>
 
-    </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="hero-title">Political Communication
+                    </h2>
+                    <p class="hero-lead">Computational studies of public discourse in the digital age
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="container">
-        <footer>
-            <a href="/projects/meta-research.html"><i class="fa fa-arrow-right"></i> Access <b>meta-research</b> and <b>literature mapping</b> projects</a>
-            <br/><br/>
-            <p>&copy; 2024 Giovanni Maggi. All rights reserved.</p>
-        </footer>
-    </div>
 
-</body>
+
+
+
+    <main class="main">
+        <div class="container">
+                <div class="content-main">
+                    <section class="section">
+
+
+                        <div class="card" style="margin-bottom: 1.5rem;">
+                            <a href="../pdf/masterthesis.pdf"
+                                style="background: white; color: var(--color-primary); text-decoration: none; border-radius: 8px; transition: all 0.2s ease; margin-bottom: 1.5rem;">
+                                <div class="card-header">
+                                    <span class="tag">Master Thesis • 2024</span>
+                                </div>
+                                <h3 class="card-title">Structuring the Public Debate</h3>
+                                <h4 style="margin-bottom: 0.5rem;">Party-Press Alignment and Discursive Polarization in the French Immigration and Climate Change Debate</h4>
+                                <p class="card-text" style="margin-bottom: 0.5rem;">My master thesis tested whether some of the arguments by Benkler, Farris, and Roberts in their 2018 book "Network Propaganda" hold in media and political systems outside of the US. Bridging literature in comparative media studies, political communication, and political science, I leveraged computational techniques to estimate the <b>discursive polarization</b> levels in France between 2017 and 2019 and its relation to <b>party-press alignment</b> on issue salience. My analysis finds little evidence of polarization in the French media system and scarce proof of a correlation between the two variables.</p>
+                                <p class="card-text">Supervisors: Prof. Caterina Froio (Sciences Po, CEE); Prof. Pedro Ramaciotti Morales (CNRS, Institute for Complex
+                                Systems)
+</p>
+                                <p style="text-align: center">
+                                    <img src="../images/NetworkLeaningImmigration.png" width="300" height="300">
+                                    <img src="../images/NetworkLeaningClimate.png" width="300" height="300">
+                                    <img src="../images/barchart-polarization.png" width="600" height="220">
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="card" style="margin-bottom: 1.5rem;">
+                            <a href="https://github.com/giomagg/Exploring-the-NordStream-Discourse-on-Twitter"
+                                style="background: white; color: var(--color-primary); text-decoration: none; border-radius: 8px; transition: all 0.2s ease; margin-bottom: 1.5rem;">
+                                <div class="card-header">
+                                    <span class="tag-light">Master Paper • 2023</span>
+                                </div>
+                                <h3 class="card-title">Exploring the #NordStream Discourse on Twitter</h3>
+                                <p class="card-text" style="margin-bottom: 0.5rem;">Together with Luis Denart this work explores the Twitter discussion around the explosion of the Nord Stream 2 pipeline in 2022 in the context of the Russian invasion of Ukraine. Using social network analysis and large language models we find clearly identifiable communities showing different discourses and narratives concerning the event. The project was produced for a CSS class taught by Prof. Jean-Philippe Cointet, Prof. Marton Karsai, and Armin Pournaki.
+                                </p>
+                                <p style="text-align: center">
+                                    <img src="../images/nordstream.jpeg" width="500" height="500">
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="card" style="margin-bottom: 1.5rem;">
+                            <a href="../pdf/immigrationframing.pdf"
+                                style="background: white; color: var(--color-primary); text-decoration: none; border-radius: 8px; transition: all 0.2s ease; margin-bottom: 1.5rem;">
+                                <div class="card-header">
+                                    <span class="tag-light">Master Paper • 2023</span>
+                                </div>
+                                <h3 class="card-title">Humans, Threat, or Management?</h3>
+                                <h4 style="margin-bottom: 0.5rem;">Framing Immigration in the Media during the 2022 Italian Election</h4>
+                                <p class="card-text" style="margin-bottom: 0.5rem;">Research paper produced for the class "From the Margins to the Mainstream – Far-Right Politics in Europe and Beyond" by prof. Caterina Froio. In it, I mapped the media discussion on immigration in Italy during the 2022 election using web crawling methods and social network analysis, and qualitatively analyse the frames used by different communities to talk about immigration.
+                                </p>
+                                <p style="text-align: center">
+                                    <img src="../images/immigrationitaly.png" width="500" height="400">
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="card" style="margin-bottom: 1.5rem;">
+                            <a href="https://github.com/giomagg/Fox-News-and-US-senators"
+                                style="background: white; color: var(--color-primary); text-decoration: none; border-radius: 8px; transition: all 0.2s ease; margin-bottom: 1.5rem;">
+                                <div class="card-header">
+                                    <span class="tag-light">Master Paper • 2022</span>
+                                </div>
+                                <h3 class="card-title">Evaluating Fox News' impact on US senators' political communication</h3>
+                                <p class="card-text" style="margin-bottom: 0.5rem;">Together with Christoph Mautner Markhof, this project investigated the influence of Fox News on the Twitter communication of US senators using sentiment analysis.
+                                </p>
+                                <p style="text-align: center">
+                                    <img src="../images/foxnews-senators.png" width="300" height="220">
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="card" style="margin-bottom: 1.5rem;">
+                                <div class="card-header">
+                                    <span class="tag-light">Bachelor Paper • 2019</span>
+                                </div>
+                                <h3 class="card-title">Mapping the Connection between Celebrities and Politicians on Twitter</h3>
+                                <p class="card-text" style="margin-bottom: 0.5rem;">This is my first ever computational social science project, conducted under the supervision of prof. Chris Bail during a course at the Venice International Universtity. We mapped the connections between US celebrities and politicians from the US house of representatives on Twitter using social network analysis.</p>
+                                <p class="card-text" style="margin-bottom: 0.5rem;">The results show little connection – in terms of retweets, citations, and likes – between the two classes (in the vizualization below,
+                                politicians are on the left and celebrities on the right).
+                                </p>
+                                <p style="text-align: center">
+                                    <img src="../images/celebrities-politicians.png" width="600" height="300">
+                                </p>
+                            </a>
+                        </div>
+                    </section>                    
+                </div>
+                <!-- Sidebar -->
+                <!--<aside class="sidebar">
+                    <h2 style="margin-bottom: 1.5rem;">Ongoing</h2>
+                    <div class="card sidebar-card">
+                        <div class="card-header">
+                            <span class="tag">PhD Research</span>
+                        </div>
+                        <h3 class="sidebar-title">Discursive Mainstreaming of the Far-Right</h3>
+                    </div>
+                </aside>
+                -->
+            
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Giovanni Maggi. All rights reserved.</p>
+                <p class="footer-update">Last update: April 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
 </html>

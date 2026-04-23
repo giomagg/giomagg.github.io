@@ -1,135 +1,136 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://kit.fontawesome.com/b1f6c37ee8.js" crossorigin="anonymous"></script>
-    
-    <!-- Website Metadata-->
     <meta charset="UTF-8">
-    <title>Giovanni Maggi</title>
-    <meta name="description" content="Personal web page of Giovanni Maggi">
-	<meta name="author" content="Giovanni Maggi">
-    
-    <!-- visualization on mobile and desktop -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!-- Remember to add the CSS specifications for the Layout of the website -->
-    <link rel="stylesheet" href="style.css"> 
-
-    <!-- favicons 
-    <link rel="icon" href="images/favicon.ico">
-	<link rel="shortcut icon" href="images/favicon.ico">
-    
-    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Giovanni Maggi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <div class="container">
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <circle cx="10" cy="10" r="4" fill="currentColor"/>
+            <path d="M10 0v3M10 17v3M20 10h-3M3 10H0M16.07 3.93l-2.12 2.12M6.05 14.05l-2.12 2.12M16.07 16.07l-2.12-2.12M6.05 5.95L3.93 3.93" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+        </svg>
+    </button>
 
-        <nav>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Giovanni Maggi</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="research.html" class="nav-link">Research</a>
+                <a href="publications.html" class="nav-link active">Publications</a>
+                <a href="cv.html" class="nav-link">CV</a>
             </div>
-            <div class="site-name"><h5>&nbsp;&nbsp;&nbsp;Giovanni Maggi</h5></div>
-            <ul id="nav_links">
-              <li><a href="/">Home</a></li>
-              <li><a href="/research.html">Research</a></li>
-              <li><a href="/publications.html">Publications</a></li>
-              <!--<li><a href="/portfolio.html">Portfolio</a></li>-->
-              <li><a href="/cv.html">CV</a></li>
-            </ul>
-            <script src="menu.js"></script>
-        </nav>
-    
-        <div class="ten columns">
-            <h3>Publications</h3>
-
-            <p style="text-align: justify;">
-            My publications at this eraly stage of my career are mostly non-academic. Still, I have been involved in researching the topics that passionate me for some time now and have produced a number of minor publications you can find here below.
-            <br/>
-            <br/>
-            If you are looking for unpublished works related to the online public sphere and its science check out my <a href="/research.html">research</a> page.
-            <br/>
-            </p>
-
-            <h5>In Progress</h5>
-            <p>
-            Who funds, What follows? An analysis of declared grants in the academic literature on information and democracy research using text as data.
-            <br/>
-            – with Silvio Suckow
-            <br/>
-            </p>
-            
-            <h5>Policy Papers and Think Tank Articles</h5>
-            <p>
-            [Accepted] Cultural Biases in Generative AI: Exploring Religious Bias in Stable Diffusion
-            <br/> <i>Sciences Po, AI Summit, TIERD Project</i>, 2025. <a href="https://giomagg.github.io/Cultural-Biases-in-Generative-AI/">Read draft</a>
-            <br/> with Zurdo, Laura; Mautner Markhof, Christoph; Bromová, Barbara; Rapparini, Riccardo.
-            <br/> Coverage <a href="https://www.sciencespo.fr/public/chaire-numerique/en/2023/06/26/student-essays-decoding-biases-in-artificial-intelligence-two-students-projects/">here</a> and <a href="https://www.sciencespo.fr/ecole-affaires-publiques/en/news/lessons-learned-course-decoding-biases-artificial-intelligence/">here</a>.
-            </p>  
-
-            <p>
-            <br/>
-            <a href="pdf/Interoperability.pdf">Exploring Mandatory Interoperability across Social Media Platforms in the EU</a>
-            <br/> <i>Sciences Po Press – Chair of Digital, Governance and Sovereignty</i>, 2023.
-            <br/> with Fröhlich, Noah; Denart, Luis; Koch, Nicoletta. 
-            <br/> Coverage <a href="https://www.sciencespo.fr/public/chaire-numerique/en/2023/08/31/student-policy-brief-should-interoperability-across-social-media-platforms-be-mandatory-in-the-eu/">here</a>.
-            </p>
-
-            <p>
-            <br/>
-            <a href="pdf/csireview_7_gender.pdf">Gender and Whistleblowing Online.</a> Comparative Analysis of the Twitter Discourse around Peiter Zatko and Frances Haugen’s Revelations: A look into gender-based elements.
-            <br/> <i>CSI Review</i>, 7, pp. 53-65, Naples, Centro Studi Internazionali, 2023.
-            <br/>
-            </p>   
-
-            <p>
-            <br/>
-            <a href="pdf/csireview_5_AI.pdf">AI automation and the future of work</a> The EU digital strategy, job polarisation and skill- biased technological change.
-            <br/> <i>CSI Review</i>, 5, pp. 27-40, Naples, Centro Studi Internazionali, 2022
-            </p>
-
-            <p>
-            <br/>
-            Chapter <a href="pdf/csi_policybrief.pdf">Sfide digitali</a> in "L'Europa al bivio - Quale strada per l'unione del domani?".
-            <br/> <i>CSI Policy Brief</i>, 1, pp. 38-40, Naples, Centro Studi Internazionali, 2022
-            <br/> with Scipione, Jacopo. 
-            <br/>
-            </p>
-
-            <h5>Short Analyses</h5>
-            <p> 
-            These analyses have been produced for divulgation about contemporary issues in digital policy and governance of the public sphere. They constitute my first steps into researching these topics.
-            <br/><br/>
-            <a href="http://www.csinternazionali.org/uploads/2/8/5/4/2854018/il_caso_julian_assange_uno_sguardo_critico_all’estradizione_e_al_processo_del_fondatore_di_wikileaks__csi_bulletin_2021_.pdf">Julian Assange: a critical look at the extradition and trial of the founder of WikiLeaks</a>
-            <br/> <i> Centro Studi Internazionali</i>, 2021
-            <br/><br/>
-            <a href="http://www.csinternazionali.org/uploads/2/8/5/4/2854018/gaza_la_guerra_mediatica_il_ruolo_dei_social_media_nella_narrativa_del_conflitto_israelo-palestinese__csi_bulletin_2021_.pdf">Gaza, a Mediatic War: the role of social media in the Israeli-Palestinian conflict.</a>
-            <br/> <i> Centro Studi Internazionali</i>, 2021
-            <br/><br/>
-            <a href="http://www.csinternazionali.org/bulletin/verso-la-sovranita-digitale-europea-il-decennio-digitale">Towards European Digital Sovereignty:  the Digital Decade</a>
-            <br/> <i> Centro Studi Internazionali</i>, 2021
-            <br/><br/>
-            <a href="http://www.csinternazionali.org/uploads/2/8/5/4/2854018/infosfera_e_democrazia_post-verità_e_la_nuova_geopolitica_dell’informazione__csi_bulletin_2021_.pdf">Infosphere and Democracy: post-truth and the new geopolitics of information.</a>
-            <br/> <i> Centro Studi Internazionali</i>, 2021
-            <br/><br/>
-            <a href="https://www.geopolitica.info/la-lotta-per-il-dominio-dei-dati-lue-contro-le-big-tech/">The fight for Data Control: EU v. Big Tech</a>
-            <br/> <i> Geopolitica.info</i>, 2020
-            <br/><br/>
-            </p>
-
         </div>
-    
-    </div>
+    </nav>
 
-    <div class="container">
-        <footer>            
-            <a href="/projects/meta-research.html"><i class="fa fa-arrow-right"></i> Access <b>meta-research</b> and <b>literature mapping</b> projects</a>
-            <br/>
-            <a href="/projects/political-communication.html"><i class="fa fa-arrow-right"></i> Access <b>public sphere</b> projects</a>
-            <br/><br/>
-            <p>&copy; 2024 Giovanni Maggi. All rights reserved.</p>
-        </footer>
-    </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Publications</h1>
+                    <p class="hero-lead">Papers, pre-prints, presentations, and ongoing projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <div class="content-main" style="max-width: 900px; margin: 0 auto;">
+                <section class="section">
+                    <section class="section">
+                        <h2 class="section-title">Peer-reviewed Papers</h2>
+                        <p style="color: var(--color-text-muted); font-style: italic; margin-bottom: 2rem;">Published peer-review paper will be listed here.</p>
+
+                        <h2 class="section-title">Conference Presentations</h2>
+                        <p style="color: var(--color-text-muted); font-style: italic; margin-bottom: 2rem;">Conference presentations and talks will be listed here as they occur.</p>
+
+                        <h2 class="section-title">Other Outputs</h2>
+                        <p style="color: var(--color-text-muted); font-style: italic; margin-bottom: 2rem;">Blog posts, reports, and other research outputs will be shared here.</p>
+                    </section>
+                <!--
+                <section class="section">
+                    <h2 class="section-title">Peer-reviewed Papers</h2>
+                    <div class="card" style="margin-bottom: 1.5rem;">
+                        <div class="card-header">
+                            <span class="tag">In Progress</span>
+                        </div>
+                        <h3 class="card-title">The Discursive Mainstreaming of Far-Right Narratives in Digital Media</h3>
+                        <p class="card-text" style="margin-bottom: 1rem;">This paper examines the mechanisms through which far-right narratives enter mainstream political discourse via digital media platforms. Using network analysis and NLP techniques, I trace the pathways of discursive diffusion across different media ecosystems.</p>
+                        <p class="card-text" style="font-size: 0.85rem; color: var(--color-text-muted);">Status: Manuscript in preparation</p>
+                    </div>
+
+                    <div class="card" style="margin-bottom: 1.5rem;">
+                        <div class="card-header">
+                            <span class="tag">In Progress</span>
+                        </div>
+                        <h3 class="card-title">Computational Approaches to Political Discourse Analysis</h3>
+                        <p class="card-text" style="margin-bottom: 1rem;">A methodological contribution exploring the integration of network analysis and natural language processing for studying political discourse. The paper discusses best practices and pitfalls in applying computational methods to political communication research.</p>
+                        <p class="card-text" style="font-size: 0.85rem; color: var(--color-text-muted);">Status: Early draft</p>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Conference Presentations</h2>
+                    <div class="prose">
+                        <p style="color: var(--color-text-muted); font-style: italic; margin-bottom: 2rem;">Conference presentations and talks will be listed here as they occur.</p>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Other Outputs</h2>
+                    <div class="prose">
+                        <p style="color: var(--color-text-muted); font-style: italic; margin-bottom: 2rem;">Blog posts, reports, and other research outputs will be shared here.</p>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Ongoing Projects</h2>
+                    <div class="card-grid">
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="tag">Data Collection</span>
+                            </div>
+                            <h3 class="card-title">Digital Trace Data Archive</h3>
+                            <p class="card-text">Building a comprehensive archive of digital trace data from social media platforms and news sources for studying political communication over time.</p>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="tag">Methods</span>
+                            </div>
+                            <h3 class="card-title">Computational Tools Development</h3>
+                            <p class="card-text">Developing open-source tools and workflows for computational analysis of political discourse, with focus on accessibility for social science researchers.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>-->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Giovanni Maggi. All rights reserved.</p>
+                <p class="footer-update">Last update: April 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,144 +1,202 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <script src="https://kit.fontawesome.com/b1f6c37ee8.js" crossorigin="anonymous"></script>
-        
-        <!-- Website Metadata-->
-        <meta charset="UTF-8">
-        <title>Giovanni Maggi</title>
-        <meta name="description" content="Personal web page of Giovanni Maggi">
-        <meta name="author" content="Giovanni Maggi">
-        
-        <!-- visualization on mobile and desktop -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
-        <!-- Remember to add the CSS specifications for the Layout of the website -->
-        <link rel="stylesheet" href="style.css"> 
-    
-        <!-- favicons 
-        <link rel="icon" href="images/favicon.ico">
-        <link rel="shortcut icon" href="images/favicon.ico">
-        
-        -->
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Giovanni Maggi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
 <body>
-    <div class="container">
-    
-        <nav>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <circle cx="10" cy="10" r="4" fill="currentColor"/>
+            <path d="M10 0v3M10 17v3M20 10h-3M3 10H0M16.07 3.93l-2.12 2.12M6.05 14.05l-2.12 2.12M16.07 16.07l-2.12-2.12M6.05 5.95L3.93 3.93" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+        </svg>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Giovanni Maggi</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="research.html" class="nav-link">Research</a>
+                <a href="publications.html" class="nav-link">Publications</a>
+                <a href="cv.html" class="nav-link active">CV</a>
             </div>
-            <div class="site-name"><h5>&nbsp;&nbsp;&nbsp;Giovanni Maggi</h5></div>
-                <ul id="nav_links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/research.html">Research</a></li>
-                <li><a href="/publications.html">Publications</a></li>
-                <!--<li><a href="/portfolio.html">Portfolio</a></li>-->
-                <li><a href="/cv.html">CV</a></li>
-            </ul>
-            <script src="menu.js"></script>
-        </nav>  
-    
-        <div class="ten columns">
-            <h3>Curriculum Vitae</h3>
-            <p style="text-align: justify;">
-                <a href="pdf/cv_maggi.pdf"><i class="fa fa-arrow-right"></i> Full CV</a>.
-                <br/>
-            </p>
-            <h5>Education</h5>
-            <p>
-                Since Sept 2025
-                <br/><b>PhD in Political Science</b>
-                <br/>Université Libre de Bruxelles – CEVIPOL
-
-                <br/><br/>
-                2022-2024
-                <br/><b>MA in Digital, New Technologies, and Public Policy – Research Track</b>
-                <br/>Sciences Po – School of Public Affairs and School of Research
-                <br/>&mdash; <i>Summa cum laude</i>
-
-                <br/><br/>
-                2018-2021
-                <br/><b>BA in Philosophy, International and Economic Studies</b>
-                <br/>Ca' Foscari University of Venice – Department of Philosophy and Cultural Heritage
-                <br/>&mdash; <i>110 e lode</i>
-            </p>    
-
-            <h5>Experience</h5>
-            <p style="text-align: justify;">
-                Apr 2025 - Sep 2025
-                <br/><b>Freelance Researcher</b>
-                <br/>Weizenbaum Institut, Berlin (DE)
-                
-                <br/><br/>
-                Oct 2024 - Apr 2025
-                <br/><b>Data Officer and Research Assistant</b>
-                <br/>Observatory on Information and Democracy, Paris (FR); CNRS Institute for Complex Systems, Paris (FR)
-
-                <br/><br/>
-                Apr 2021 - Present
-                <br/><b>Analyst and Member of the Editorial Board</b>
-                <br/>Centro Studi Internationali, Naples (IT)
-
-                <br/><br/>
-                May 2023 - Feb 2024
-                <br/><b>Research Assistant for Prof. Jen Schradie</b>
-                <br/>Center for Research on Social Inequalities - Sciences Po, Paris (FR)
-
-                <br/><br/>
-                Feb - Jul 2022
-                <br/><b>Foresight, Studies, and Policy Assessment Trainee</b>
-                <br/>European Economic and Social Committee, Brussels (BE)
-
-                <br/><br/>
-                Sep 2021 - Feb 2022
-                <br/><b>Policy Research Trainee</b>
-                <br/>Euclid Network, The Hague (NL)
-
-                <br/><br/>
-                Sep - Oct 2021
-                <br/><b>Research Fellow</b>
-                <br/>Global Arena Research Institute, Prague (CZ)
-            </p>
-
-            <h5>Extracurricular Trainings</h5>
-            <p>
-                June 2024
-                <br/><b>Statistical Text Analysis</b>
-                <br/>Sciences Po Médialab &mdash; Prof. Alex Kindel
-
-                <br/><br/>
-                June 2023
-                <br/><b>Social Media Networks Political Analysis</b>
-                <br/>Sciences Po Médialab &mdash; Prof. Pedro Ramaciotti Morales
-
-                <br/><br/>
-                Nov - Dec 2021
-                <br/><b>Ethics of Artificial Intelligence</b>
-                <br/>London School of Economics &mdash; Prof. Kate Vredenburgh 
-
-                <br/><br/>
-                Sep - Dec 2019
-                <br/><b>Cultural Globalization and Big Data</b>
-                <br/>Venice International University &mdash; Prof. Chris Bail
-
-                <br/><br/>
-
-            </p>
-
         </div>
-    </div>
+    </nav>
 
-    <div class="container">
-        <footer>
-            <a href="/projects/meta-research.html"><i class="fa fa-arrow-right"></i> Access <b>meta-research</b> and <b>literature mapping</b> projects</a>
-            <br/>
-            <a href="/projects/political-communication.html"><i class="fa fa-arrow-right"></i> Access <b>public sphere</b> projects</a>
-            <br/><br/>
-            <p>&copy; 2024 Giovanni Maggi. All rights reserved.</p>
-        </footer>
-    </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">CV</h1>
+                    <p class="hero-lead">Academic background and research experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <div class="content-main" style="max-width: 900px; margin: 0 auto;">
+
+                <!-- Education -->
+                <section class="section">
+                    <h2 class="section-title">Current Position</h2>
+                    
+                    <div class="card" style="margin-bottom: 1.5rem;">
+                        <div class="card-header">
+                            <span class="tag">Since 2025</span>
+                        </div>
+                        <h3 class="card-title">PhD in Political Sciences</h3>
+                        <p class="card-text" style="margin-bottom: 1rem;"><strong>Université Libre de Bruxelles</strong> • Centre d'Étude de la Vie Politique (CEVIPOL)</p>
+                        <p class="card-text"><b>Thesis</b>: "Discursive Mainstreaming of the Far-Right in Networked Debates"</p>
+                        <p class="card-text" ><b>Supervisor</b>: Prof. Pietro Castelli Gattinara</p>
+                        <p class="card-text" ><b>Funding</b>: Mini-ARC Fellowship</p>
+                    </div>
+                    <div class="card"
+                        style="background: var(--color-primary); border-color: var(--color-primary); color: white; text-align: center;margin-bottom: 1.5rem;">
+                        <a href="pdf/cv_maggi.pdf"
+                            style="display: inline-block; padding: 0.75rem 2rem; background: white; color: var(--color-primary); text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.2s ease;">Full
+                            CV</a>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Education</h2>
+
+                    <div class="card" style="margin-bottom: 1.5rem;">
+                        <div class="card-header">
+                            <span class="tag-light">2022-2024</span>
+                        </div>
+                        <h3 class="card-title">MA in Digital, New Technology, and Public Policy</h3>
+                        <p class="card-text" style="margin-bottom: 0.5rem"><strong>Sciences Po, Paris</strong> • School of Public Affairs and School of Research</p>
+                        <p class="card-text" style="color: var(--color-text-muted); font-size: 0.9rem;">Summa cum laude</p>
+                    </div>
+
+                    <div class="card" style="margin-bottom: 1.5rem;">
+                        <div class="card-header">
+                            <span class="tag-light">2018-2021</span>
+                        </div>
+                        <h3 class="card-title">BA in Philosophy, International, and Economic Studies</h3>
+                        <p class="card-text" style="margin-bottom: 0.5rem;"><strong>Ca' Foscari University of Venice</strong> • Department of Philosophy and Cultural Heritage</p>
+                        <p class="card-text" style="color: var(--color-text-muted); font-size: 0.9rem;">110 e lode
+                        </p>
+                    </div>
+                </section>
+
+
+                <!-- Download CV -->
+                <!--<section class="section">
+                    <div class="card"
+                        style="background: var(--color-primary); border-color: var(--color-primary); color: white; text-align: center;">
+                        <h3 class="card-title" style="color: white; margin-bottom: 1rem;">Download Full CV</h3>
+                        <a href="pdf/cv_maggi.pdf"
+                            style="display: inline-block; padding: 0.75rem 2rem; background: white; color: var(--color-primary); text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.2s ease;">PDF</a>
+                    </div>
+                </section>-->
+
+
+                <!-- Research Experience -->
+                <section class="section">
+                    <h2 class="section-title">Research Experience</h2>
+                    
+                    <div class="card" style="margin-bottom: 1.5rem;">
+                        <div class="card-header">
+                            <span class="tag-light">Apr-Sept 2025</span>
+                        </div>
+                        <h4 class="card-title">Freelance Researcher</h4>
+                        <p class="card-text" style="margin-bottom: 0.5rem;"><strong>Weizenbaum Institut</strong> • Berlin (DE)</p>
+                        </p>
+                    </div>
+                    <div class="card" style="margin-bottom: 1.5rem;">
+                        <div class="card-header">
+                            <span class="tag-light">Oct 2024-Apr 2025</span>
+                        </div>
+                        <h4 class="card-title">Data Officer and Research Assistant</h4>
+                        <p class="card-text" style="margin-bottom: 0.5rem;"><strong>Observatory on Information and Democracy</strong> & <strong> CNRS Institute for Complex Systems</strong> • Paris (FR)</p>
+                        </p>
+                    </div>
+                    <div class="card" style="margin-bottom: 1.5rem;">
+                        <div class="card-header">
+                            <span class="tag-light">May 2023-Feb 2024</span>
+                        </div>
+                        <h4 class="card-title">Research Assistant</h4>
+                        <p class="card-text" style="margin-bottom: 0.5rem;"><strong>Center for Research on Social Inequalities - Sciences Po</strong> • Paris (FR)</p>
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Trainings -->
+                <section class="section">
+                    <h2 class="section-title">Trainings</h2>
+                    
+                    <div class="card-grid">
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="tag-light">June 2024</span>
+                            </div>
+                            <h3 class="card-title">Statistical Text Analysis</h3>
+                            <p class="card-text" style="margin-bottom: 0.5rem;"><strong>Sciences Po Médialab</strong> • Prof. Alex Kindel</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="tag-light">June 2023</span>
+                            </div>
+                            <h3 class="card-title">Social Media Networks Political Analysis</h3>
+                            <p class="card-text" style="margin-bottom: 0.5rem;"><strong>Sciences Po Médialab</strong> • Prof. Pedro Ramaciotti Morales</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="tag-light">Nov-Dec 2021</span>
+                            </div>
+                            <h3 class="card-title">Ethics of Artificial Intelligence</h3>
+                            <p class="card-text" style="margin-bottom: 0.5rem;"><strong>London School of Economics</strong> • Prof. Kate Vredenburgh</p>
+                        </div>
+
+
+                    </div>
+                </section>
+
+                <!-- Languages -->
+                <section class="section">
+                    <h2 class="section-title">Languages</h2>
+                    
+                    <div class="card">
+                        <div class="prose">
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="margin-bottom: 0.75rem;"><strong>Italian:</strong> Native</li>
+                                <li style="margin-bottom: 0.75rem;"><strong>English:</strong> Fluent</li>
+                                <li style="margin-bottom: 0.75rem;"><strong>French:</strong> Fluent</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Giovanni Maggi. All rights reserved.</p>
+                <p class="footer-update">Last update: April 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

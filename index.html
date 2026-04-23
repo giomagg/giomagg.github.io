@@ -1,99 +1,167 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://kit.fontawesome.com/b1f6c37ee8.js" crossorigin="anonymous"></script>
-    
-    <!-- Website Metadata-->
     <meta charset="UTF-8">
-    <title>Giovanni Maggi</title>
-    <meta name="description" content="Personal web page of Giovanni Maggi">
-	<meta name="author" content="Giovanni Maggi">
-    
-    <!-- visualization on mobile and desktop -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!-- Remember to add the CSS specifications for the Layout of the website -->
-    <link rel="stylesheet" href="style.css"> 
-
-    <!-- favicons 
-    <link rel="icon" href="images/favicon.ico">
-	<link rel="shortcut icon" href="images/favicon.ico">
-    
-    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giovanni Maggi - PhD Candidate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <nav> 
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <circle cx="10" cy="10" r="4" fill="currentColor"/>
+            <path d="M10 0v3M10 17v3M20 10h-3M3 10H0M16.07 3.93l-2.12 2.12M6.05 14.05l-2.12 2.12M16.07 16.07l-2.12-2.12M6.05 5.95L3.93 3.93" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+        </svg>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Giovanni Maggi</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="research.html" class="nav-link">Research</a>
+                <a href="publications.html" class="nav-link">Publications</a>
+                <a href="cv.html" class="nav-link">CV</a>
             </div>
-            <div class="site-name"><h5>&nbsp;&nbsp;&nbsp;Giovanni Maggi</h5></div>
-            <ul id="nav_links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/research.html">Research</a></li>
-            <li><a href="/publications.html">Publications</a></li>
-            <!--<li><a href="/portfolio.html">Portfolio</a></li>-->
-            <li><a href="/cv.html">CV</a></li>
-            </ul>
-            <script src="menu.js"></script>
-        </nav>
-
-        <div class="one-third column">
-            <!--<p style="text-align: center;"><img src="images/portrait.png" alt="" width="65%" >
-                <br/>
-                <br/>
-            I DONT KNOW WHETHER TO PUT THIS SPECIFICATION OR NOT <p>Philosophy, Technology, and Society using CSS methods.</p>-->
-            
-            <p style="text-align: justify;">
-                <br/><br/><br/>
-                <i class="fa fa-map-marker"></i>  Brussels, BE <br/>
-                ULB - Campus du Solbosch <br/>Avenue F.D. Roosevelt, 50<br/> 1050, Ixelles<br/><br/>
-                <!--<i class="fa fa-phone-square"></i>  +39 366 712 6632 <br/>-->
-                <i class="fa fa-envelope-square"></i>  <a href="mailto:giovanni.maggi@ulb.com">giovanni.maggi@ulb.com</a><br/>
-                <i class="fa fa-github-square"></i>  <a href="https://github.com/giomagg">github.com/giomagg</a><br/>  
-                <i class="fa fa-linkedin-square"></i>  <a href="https://www.linkedin.com/in/giovanni-m-b70b0b1b6/">Giovanni Maggi</a><br/>  
-                <i class="fa fa-face-smiling-hands"></i>  <a href="https://huggingface.co/giomagg">giomagg</a><br/>  
-
-                <!-- Google scholar and ORCiD
-                <i class="fa fa-user-graduate"></i>  <a href="https://scholar.google.com/citations?user=hIMdRkMAAAAJ">Google Scholar</a><br/>
-                <i class="fab fa-orcid"></i>  <a href="https://orcid.org/0000-0003-4760-367X">ORCID</a><br/>  
-                -->
-            </p>
         </div>
-            
-        <div class="two-thirds column">
-            
-            <p style="text-align: justify;font-size:15px;">
-                <br/><br/>
-                Hi there! <br/><br/>
-                I am Giovanni Maggi, thank you for visiting my website. I am currently a PhD candidate and <b>Mini-ARC fellow</b> at the <b>Centre d'Étude de la Vie Politique (CEVIPOL)</b> of the <b>Université Libre de Bruxelles</b>. Under the supervision of Prof. Pietro Castelli Gattinara, my thesis is focused on understanding the <b>discursive mainstreaming of the far-right and its effects on mainstream public discourse</b>.
-                
-                <br/><br/>                
-                At the crossroads of <b>digital media studies</b>, <b>political communication</b>, <b>political sciences</b>, and <b>sociology</b>, my research concentrates on understanding how new technologies are leveraged as possibilities to initiate <b>change in public discourses</b>. I investigate these topics using <b>computational social science</b> techniques, scraping digital trace data and modelling discursive fields using a combination of <b>network anaysis</b> and <b>natural language processing</b>.                   
-                
-                <br/><br/>
-                I hold a BA in Philosophy, International, and Economic Studies from Ca' Foscari University of Venice and a research Master's in Digital, New Technology, and Public Policy from the Institut d'Études Politiques (Sciences Po) in Paris. 
-                
-                <br/><br/>
-                <br/><br/>
-                <br/><br/>
-                <!--Before my tertiary education I went to music school, I play the trumpet with a particular passion for interpreting pieces from two quite dinstict genres: baroque and funk music. 
-                -->
+    </nav>
 
-            </p>
-            <p style="text-align: right;font-size:11px;">
-               Last update: February 2025 
-            </p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Hi there!</h1>
+                    <!--<p class="hero-lead">I am Giovanni Maggi, thank you for visiting my website.</p>-->
+                </div>
+            </div>
         </div>
+    </section>
 
-    </div>
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <div class="content-grid">
+                <!-- About Section -->
+                <div class="content-main">
+                    <section class="section">
+                        <div class="prose">
+                            <p>I am a PhD candidate and <strong>Mini-ARC fellow</strong> at the <strong>Centre d'Étude de la Vie Politique (CEVIPOL)</strong> of the <strong>Université Libre de Bruxelles</strong>. Under the supervision of Prof. Pietro Castelli Gattinara, my thesis uses computational methods to study the <strong>discursive mainstreaming of the far-right and its effects on mainstream public discourse</strong>.</p>
+                            
+                            <!--<p>At the crossroads of <strong>digital media studies</strong>, <strong>political communication</strong>, <strong>political sciences</strong>, and <strong>sociology</strong>, my research concentrates on understanding how new technologies are leveraged as possibilities to initiate <strong>change in public discourses</strong>.</p> 
+                            
+                            <p>I investigate these topics using <strong>computational social science</strong> techniques, scraping digital trace data and modelling discursive fields using a combination of <strong>network analysis</strong> and <strong>natural language processing</strong>.</p>
+                            
+                            <p>I hold a BA in Philosophy, International, and Economic Studies from Ca' Foscari University of Venice and a research Master's in Digital, New Technology, and Public Policy from the Institut d'Études Politiques (Sciences Po) in Paris.</p>
+                            -->
+                        </div>
+                    </section>
 
-    <div class="container">
-        <footer>
-            <p>&copy; 2024 Giovanni Maggi. All rights reserved.</p>
-        </footer>
-    </div>
+                    <!-- Research Highlights -->
+                    <section class="section">
+                        <h2 class="section-title">Research Areas</h2>
+                        <div class="card-grid">
+                            <div class="card">
+                                <div class="card-header">
+                                    <span class="tag">Political Communication</span>
+                                </div>
+                                <h3 class="card-title">Far-Right Discourse</h3>
+                                <p class="card-text">Understanding how far-right ideas permeate mainstream political discourse.</p>
+                            </div>
+                            
+                            <div class="card">
+                                <div class="card-header">
+                                    <span class="tag">Digital Media</span>
+                                </div>
+                                <h3 class="card-title">Social Media and Politics</h3>
+                                <p class="card-text">Examining how new communication technologies affect politics and public discourse.</p>
+                            </div>
 
+                            <div class="card">
+                                <div class="card-header">
+                                    <span class="tag">Methods</span>
+                                </div>
+                                <h3 class="card-title">Computational Social Science</h3>
+                                <p class="card-text">Combining network analysis, NLP, and LLMs to scrape and analyze digital trace data.</p>
+                            </div>
+                        
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <div class="card sidebar-card">
+                        <h3 class="sidebar-title">Contact</h3>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <svg class="contact-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                                </svg>
+                                <a href="mailto:giovanni.maggi@ulb.com">giovanni.maggi@ulb.com</a>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <svg class="contact-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"/>
+                                </svg>
+                                <div>
+                                    <div>ULB - Campus du Solbosch</div>
+                                    <div>Avenue F.D. Roosevelt, 50</div>
+                                    <div>1050, Ixelles</div>
+                                    <div>Brussels, BE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card sidebar-card">
+                        <h3 class="sidebar-title">Links</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/giomagg" class="social-link" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"/>
+                                </svg>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/giovanni-m-b70b0b1b6/" class="social-link" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+                                </svg>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://huggingface.co/giomagg" class="social-link" target="_blank">
+                                <svg width="20" height="20" viewBox="0 0 95 88" fill="currentColor">
+                                    <path d="M47.21 1.54a23.45 23.45 0 0 0-15.3 7.95A23.45 23.45 0 0 0 16.6 1.54c-9.94 0-18 8.07-18 18 0 1.48.18 2.92.52 4.3-.32 1.38-.52 2.82-.52 4.3 0 9.94 8.06 18 18 18a17.9 17.9 0 0 0 10.62-3.5 23.35 23.35 0 0 0 20.9 13.4c10.82 0 19.87-7.34 22.54-17.3 1.18.3 2.42.46 3.7.46 9.93 0 18-8.06 18-18 0-1.48-.18-2.92-.52-4.3.34-1.38.52-2.82.52-4.3 0-9.93-8.07-18-18-18a17.9 17.9 0 0 0-10.62 3.5A23.35 23.35 0 0 0 47.21 1.54zm.57 9.44c7.78 0 14.08 6.3 14.08 14.08v20.56c0 7.78-6.3 14.08-14.08 14.08-7.78 0-14.08-6.3-14.08-14.08V25.06c0-7.78 6.3-14.08 14.08-14.08z"/>
+                                </svg>
+                                <span>Hugging Face</span>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Giovanni Maggi. All rights reserved.</p>
+                <p class="footer-update">Last update: April 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
